@@ -1,0 +1,14 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+    <head>
+        <title>send mail</title>
+    </head>
+
+    <body>
+
+        <referenceContainer name="content">
+            <block name="order_index_index" template="Hello_Order::order.phtml"/>
+        </referenceContainer>
+
+    </body>
+</page>

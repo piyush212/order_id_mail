@@ -1,0 +1,24 @@
+<form action="<?php echo $this->getBaseUrl().'order/mail/post/';?>" name="customemaildata" method="post" id="contactForm-1" data-hasrequired="<?php echo __('* Required Fields') ?>" data-mage-init='{"validation":{}}'>
+    <fieldset class="fieldset">
+        <div class="field order_id required">
+            <label class="label" for="order"><span><?php  echo __('Order Id') ?></span></label>
+            <div class="control">
+                <input name="order_id" id="order" title="<?php echo __('order_id') ?>" class="input-text" type="text" data-validate="{required:true}"/>
+            </div>
+        </div>
+        <div class="field msg required">
+            <label class="label" for="message"><span><?php  echo __('Message') ?></span></label>
+            <div class="control">
+                <input name="msg" id="msg" title="<?php echo __('Email') ?>" class="input-text" type="text" data-validate="{required:true}"/>
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="<?php echo __('Submit') ?>" class="action submit primary">
+                <span><?php echo __('Submit') ?></span>
+            </button>
+        </div>
+    </div>
+</form>
